@@ -8,20 +8,27 @@
 body{
     max-width: 1900px;
 }
+
 header{
-    display: flex;
+    display: flex;  
     align-items: center;
     justify-content: space-around;
     position: fixed;
+    background-color: white;
     width: 100%;
-    height:10.6vh;
+    height:11vh;
 }
 .hamburger-menu{
     display: none;
+    background-color:  #9767A9;
+    width: 5vw;
+    border-radius: 1%;
 }
 #menu__toggle {
     opacity: 0;
-  }
+  
+    
+}
   #menu__toggle:checked + .menu__btn > span {
     transform: rotate(45deg);
   }
@@ -52,7 +59,7 @@ header{
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #616161;
+    background-color: #9767A9;
     transition-duration: .25s;
   }
   .menu__btn > span::before {
@@ -67,7 +74,7 @@ header{
 
     color:white;
     width: 18vw;
-    height: 70%;
+    height: 47%;
     margin: 0;
     padding: 80px 0;
     font-family: 'Montserrat', sans-serif;
@@ -100,16 +107,17 @@ header{
 .box-logo{
     width: 6vw;
     margin-left:10vw;
-    /* margin-right: 9vw; */
     transition: 1s all;
     display: flex;
-    /* justify-content:end; */
 }
  .box-logo img{
     width: 5.5vw;
 } 
 .box-logo:hover{
     transform: scale(1.1);
+}
+main{
+  height: 100%;
 }
 ul{
     margin-left:2vw;
@@ -137,38 +145,112 @@ li:hover{
 input{
     border: 3px solid #9767A9;
     border-radius: 50px;
-    opacity: 1;
     height: 5vh;
     width:10vw;
-    /* position: relative; */
-    /* right: 24vw; */
     background-image:url(./img/icon-lupa.png);
     background-repeat: no-repeat;
     background-size: 1vw;
     background-position:0.1vw;
-    font-family: 'Montserrat', sans-serif;
     font-size: 0.9vw;
     font-weight:normal;
-    opacity: 0.8;
+    
+}
+::placeholder{
+  font-family: 'Montserrat', sans-serif;
+  color:#9767A9;
+  opacity: 0.8;
 }
   .social-icons-header{
-    
-    /* padding: 50vw; */
     width: 6vw;
     margin-right:10vw;
     transition: 1s all;
     display: flex;
-    justify-content:space-between;
-    flex-direction:start;
-    /* position: relative; */
-    /* right: 23vw; */
-
+    justify-content:space-between;    
   }
   .social-icons-header:hover{
     transform: scale(1.1);
-
   }
   .img-icon-header{
      margin-left: 0.8vw;
       width: 2vw; 
+  }
+  .conteiner-banner{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      object-fit: cover;
+      height:84vh;
+      width: 100%;
+      background-image:url(/img/banner.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: #9767A9;
+
+  }
+  .banner-title{
+    width: 14vw;
+    color: white;
+    font-family: 'Playfair Display';
+    font-size: 4vw;
+    margin-right: 26vh;
+    margin-top: 8vh;
+  }
+  .banner-paragraph{
+    width: 20vw;
+    opacity: 0.9;
+    font-weight:normal;
+    color: white;
+    font-family: Montserrat;
+    font-size: 1.8vw;
+    font-weight: 100;
+    margin-top: 11vh;
+
+  }
+  .conteiner-purple{
+    background-color: #9767A9;
+    height:30vh;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5vh;
+    position: relative;
+  }
+    .title-sete-passos{
+   color: white;
+    font-size: 2.2vw;
+    width:30vw;
+    font-family: 'Playfair Display';
+  
+}
+  .paragraph-conteiner-purple{
+  color: white;
+  font-size: 1.2vw;
+  width:40vw;
+  font-family: Montserrat;
+  opacity:0.8 ;
+}
+
+
+
+
+
+  @media(max-width:800px){
+    .hamburger-menu{
+        display: block;
+    }
+    ul{
+        display: none;
+    }
+    input{
+        display: none;
+    }
+    .social-icons-header{
+        display: none;
+    }
+    .box-logo{
+        z-index: 55;
+    }
+    .box-logo img{
+        width:9vw ;
+        margin: 0 auto;
+    }
   }

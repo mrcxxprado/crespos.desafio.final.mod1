@@ -181,7 +181,7 @@ input{
       object-fit: cover;
       height:84vh;
       width: 100%;
-      background-image:url(/img/banner.png);
+      background-image:url(img/banner.png);
       background-size: contain;
       background-repeat: no-repeat;
       background-color: #9767A9;
@@ -226,7 +226,7 @@ input{
   font-size: 1.2vw;
   width:40vw;
   font-family: Montserrat;
-  opacity:0.7 ;
+  opacity:0.8 ;
 }
 
 

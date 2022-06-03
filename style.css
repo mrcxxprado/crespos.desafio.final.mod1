@@ -1,22 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@900&display=swap');
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
 }
 body{
-    max-width: 1900px;
+  max-width: 1900px;
+  margin: 0 auto;
 }
 header{
-    display: flex;  
-    align-items: center;
-    justify-content: space-around;
-    position: fixed;
-    background-color: white;
-    width: 100%;
-    height:11vh;
-    z-index: 1;
+  display: flex;  
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  background-color: white;
+  width: 100vw;
+  height:11vh;
+  z-index: 1;
+  max-width: 1900px;
+  margin: 0 auto;
 }
 .menu-icon{
   width: 10%;
@@ -24,58 +27,57 @@ header{
   margin-bottom: 5vh;
 }
 .box-logo{
-    width: 11vw;
-    margin-left:8vw;
-    transition: 1s all;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+  width: 11vw;
+  margin-left:8vw;
+  transition: 1s all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 .box-logo img{
-    width: 5.5vw;
+  width: 5.5vw;
 } 
 .box-logo:hover{
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 main{
   height: 100%;
 }
 ul{
-    
-    margin-right: 10vw;
-    width: 40vw;
-    font-family: 'Montserrat bold 700', sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin-right: 8vw;
+  width: 40vw;
+  font-family: 'Montserrat bold 700', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 li{
-    color:#9767A9;
-    font-size: 1vw;
-    font-weight:normal;
-    letter-spacing: -0.54px;
-    opacity: 0.8;
-    transition: 1s all;
+  color:#9767A9;
+  font-size: 1vw;
+  font-weight:normal;
+  letter-spacing: -0.54px;
+  opacity: 0.8;
+  transition: 1s all;
  }
 li:hover{
-    font-weight: 800;
-    cursor:grab;
-    font-size: 1vw;
-    letter-spacing:normal;
-    transform: scale(1.1);
+  font-weight: 800;
+  cursor:grab;
+  font-size: 1vw;
+  letter-spacing:normal;
+  transform: scale(1.1);
 }
 input{
-    border: 3px solid #9767A9;
-    border-radius: 50px;
-    height: 5vh;
-    width:10vw;
-    background-image:url(./img/icon-lupa.png);
-    background-repeat: no-repeat;
-    background-size: 1vw;
-    background-position:0.1vw;
-    font-size: 0.9vw;
-    font-weight:normal;
+  border: 3px solid #9767A9;
+  border-radius: 50px;
+  height: 5vh;
+  width:10vw;
+  background-image:url(./img/icon-lupa.png);
+  background-repeat: no-repeat;
+  background-size: 1vw;
+  background-position:0.1vw;
+  font-size: 0.9vw;
+  font-weight:normal;
 }
 ::placeholder{
   font-family: 'Montserrat', sans-serif;
@@ -88,37 +90,35 @@ input{
   transition: 1s all;
   display: flex;
   justify-content:space-between;    
-  }
+}
 .social-icons-header:hover{
   transform: scale(1.1);
   }
-  .img-icon-header{
-     margin-left: 0.8vw;
-      width: 2vw; 
-  }
+.img-icon-header{
+  margin-left: 0.8vw;
+  width: 2vw; 
+}
 @media(max-width:800px){
-
-    .menu-icon{
-      display: flex;
-    }
-   
-    ul{
-        display: none;
-    }
-    input{
-        display: none;
-    }
-    .social-icons-header{
-        display: none;
-    }
-    .box-logo{
-        z-index: 55;
-    }
-    .box-logo img{
-        width:9vw ;
-        margin: 0 auto;
-    }
+ .menu-icon{
+    display: flex;
   }
+  ul{
+   display: none;
+  }
+  input{
+   display: none;
+  }
+  .social-icons-header{
+    display: none;
+  }
+  .box-logo{
+    z-index: 55;
+  }
+  .box-logo img{
+    width:9vw ;
+    margin: 0 auto;
+  }
+}
 .conteiner-banner{
   display: flex;
   align-items: center;
@@ -126,11 +126,11 @@ input{
   object-fit: cover;
   height:84vh;
   width: 100%;
-  background-image:url(img/banner.png);
+  background-image:url(img/banner-atual.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #9767A9;
-  }
+}
 .banner-title{
   width: 14vw;
   color: white;
@@ -138,7 +138,7 @@ input{
   font-size: 4vw;
   margin-right: 26vh;
   margin-top: 8vh;
-  }
+}
 .banner-paragraph{
   width: 20vw;
   opacity: 0.9;
@@ -148,14 +148,14 @@ input{
   font-size: 1.8vw;
   font-weight: 100;
   margin-top: 11vh;
-  }
+}
 .conteiner-purple{
   background-color: #9767A9;
-  height:38vh;
+  height:35vh;
   display: flex;
   justify-content: space-around;
   padding-top: 5vh;
-  }
+}
 .title-sete-passos{
   color: white;
   font-size: 2rem;
@@ -164,8 +164,8 @@ input{
 }
 .paragraph-conteiner-purple{
   color: white;
-  font-size: 1.2vw;
-  width:36vw;
+  font-size: 1.1vw;
+  width:35vw;
   font-family: Montserrat;
   opacity:0.7 ;
   line-height: 3.1vh;
@@ -490,7 +490,6 @@ input{
 .column-four img{
   transition: 2s all;
 }
-
 .column-five{
   display: flex;
   flex-direction: column;
@@ -514,22 +513,76 @@ footer{
 }
 .copyright{
   font-family: Montserrat, Medium;
-  font-size: 12px;
+  font-size: 11px;
   width: 65%;
   padding-left: 12vw;
+  opacity:0.6;
 }
-.icons-footer{
+.footer-navegation{
+  width:35vw;
+  font-size: 1vw;
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-navegation:hover{
+  cursor: pointer;
+}
+.left-box{
+  height: 10vh;
+  width:10vw;
   display: flex;
   align-items: center;
-  width: 45%;
-}
-.back p{
+  justify-content: center;
   font-family: Montserrat, Light;
-  opacity:0.7 ;
-  font-size:15px;
-  display: flex;
+  opacity:0.6;
 }
-
-
-
-
+.left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left-box figure{
+  width: 4vw;
+}
+.left-box:hover{
+  background-color: #b58cc4;
+  opacity:1;
+}
+.top-box a{
+  color:white;
+  text-decoration:none;
+  height: 10vh;
+  width:10vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-family: Montserrat, Light;
+  opacity:0.6;
+}
+.icon-bg{
+  height: 10vh;
+  width:8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-box:hover{
+  background-color: #b58cc4;
+  opacity:1;
+}
+.right-box{
+  height: 10vh;
+  width:10vw;
+  display: flex;
+  align-items: center;
+  font-family: Montserrat, Light;
+  opacity:0.6;
+}
+.right-box figure{
+  width: 4vw;
+}
+.right-box:hover{
+  background-color: #b58cc4;
+  opacity:1;
+}
